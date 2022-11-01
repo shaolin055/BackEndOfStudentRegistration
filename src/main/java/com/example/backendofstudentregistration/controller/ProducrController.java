@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/course")
 public class ProducrController {
 
     @Autowired
@@ -27,6 +28,9 @@ public class ProducrController {
     public Course getcourse(@PathVariable int id) {
         return service.getCoursebyId(id);
     }
+
+//    @GetMapping("/getallstudents")
+//    public
 
     @GetMapping("/courses")
     public List<Course> listOfCourses() {

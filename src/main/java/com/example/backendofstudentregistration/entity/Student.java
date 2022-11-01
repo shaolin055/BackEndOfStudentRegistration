@@ -14,7 +14,7 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Student")
+@Table(name = "student")
 
 public class Student {
     @Id
